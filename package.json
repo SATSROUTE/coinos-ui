@@ -1,5 +1,5 @@
 {
-  "name": "coinos",
+  "name": "satsroute",
   "version": "1.0.9",
   "devDependencies": {
     "@capacitor/android": "^7.4.3",

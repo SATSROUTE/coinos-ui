@@ -20,7 +20,7 @@
 		},
 		"locations": {
 			"header": "Locais",
-			"description": "Aqui estão algumas empresas que estão aceitando bitcoin com a Coinos. Esperamos que o seu seja o próximo!",
+			"description": "Aqui estão algumas empresas que estão aceitando bitcoin com a SatsRoute. Esperamos que o seu seja o próximo!",
 			"viewMap": "Ver mapa"
 		}
 	},
@@ -38,22 +38,22 @@
 		},
 		"cost": {
 			"question": "Quanto custa?",
-			"answer": "Receber pagamentos em sua conta é gratuito. Retiradas para carteiras externas incorrem em uma pequena taxa que varia com as condições da rede. Cobramos 0.1% para converter entre Bitcoin lightning e on-chain. Enviar para outras contas Coinos é gratuito."
+			"answer": "Receber pagamentos em sua conta é gratuito. Retiradas para carteiras externas incorrem em uma pequena taxa que varia com as condições da rede. Cobramos 0.1% para converter entre Bitcoin lightning e on-chain. Enviar para outras contas SatsRoute é gratuito."
 		},
 		"individuals": {
 			"question": "Quem pode usar?",
-			"answer": "Qualquer pessoa, em qualquer lugar do mundo. A Coinos é adequado para indivíduos e empresas."
+			"answer": "Qualquer pessoa, em qualquer lugar do mundo. A SatsRoute é adequado para indivíduos e empresas."
 		},
 		"compatibility": {
 			"question": "Preciso de algum dispositivo ou software especial?",
-			"answer": "Não, a Coinos é uma aplicação web que funciona em qualquer lugar com internet. Os comerciantes podem usá-lo em um tablet ou mostrar um código QR para que os clientes o escaneiem com seus telefones."
+			"answer": "Não, a SatsRoute é uma aplicação web que funciona em qualquer lugar com internet. Os comerciantes podem usá-lo em um tablet ou mostrar um código QR para que os clientes o escaneiem com seus telefones."
 		},
 		"safety": {
 			"question": "Quando meus fundos são liberados?",
 			"answer": "Os pagamentos lightning são liberados instantaneamente. Você pode retirar seu saldo para outra carteira em segundos. Depósitos on-chain levam em média de 5 a 10 minutos para serem confirmados."
 		},
 		"pos": {
-			"question": "A Coinos pode ser integrado com meu PoS existente?",
+			"question": "A SatsRoute pode ser integrado com meu PoS existente?",
 			"answer": "Recomendamos inserir vendas em seu PoS existente como transações em dinheiro."
 		},
 		"accounting": {
@@ -111,7 +111,7 @@
 	"jobs": {
 		"header": "Vagas de emprego",
 		"subheader": "Atualmente abertas",
-		"pitch1": "Coinos está procurando ativamente desenvolvedores para se juntar à nossa crescente equipe (tempo integral ou meio-período, trabalho remoto OK).",
+		"pitch1": "SatsRoute está procurando ativamente desenvolvedores para se juntar à nossa crescente equipe (tempo integral ou meio-período, trabalho remoto OK).",
 		"pitch2": "Entusiasmado com o trabalho em bitcoin open source? Então dê uma olhada em nossos repositórios em",
 		"github": "GitHub",
 		"pitch3": "Se você acha que pode causar um impacto, gostaríamos muito de ouvir de você. Envie-nos seu currículo para"
@@ -181,7 +181,7 @@
 		"register": "Registo",
 		"home": "Home"
 	},
-	"newSiteHeader": "Join us at our <a href=\"/launch\" class=\"underline underline-offset-4 text-black hover:opacity-80\">launch party</a> in Vancouver on October 26! Looking for the old coinos? Visit <a href=\"https://classic.coinos.io\" class=\"underline underline-offset-4 text-black hover:opacity-80\">classic.coinos.io</a>",
+	"newSiteHeader": "Join us at our <a href=\"/launch\" class=\"underline underline-offset-4 text-black hover:opacity-80\">launch party</a> in Vancouver on October 26! Looking for the old SatsRoute? Visit <a href=\"https://classic.satsroute.com\" class=\"underline underline-offset-4 text-black hover:opacity-80\">classic.satsroute.com</a>",
 	"news": {
 		"header": "Notícias",
 		"subheader": "Últimos Updates",
@@ -236,7 +236,7 @@
 			"scan": "Escanear",
 			"paste": "Colar",
 			"next": "Continuar",
-			"placeholder": "Colar um endereço de bitcoin, fatura lightning ou nome de usuário na coinos",
+			"placeholder": "Colar um endereço de bitcoin, fatura lightning ou nome de usuário na SatsRoute",
 			"makeQR": "QR"
 		},
 		"settings": {
@@ -258,7 +258,7 @@
 			"emailNotifications": "Notificações por email",
 			"emailNotificationsDescription": "Ser notificado por e-mail quando ocorrer uma mudança em sua conta ou quando as pessoas lhe enviarem pagamentos.",
 			"smsNotifications": "Notificações por SMS",
-			"smsNotificationsDescription": "A Coinos lhe enviará notificações por SMS quando isto estiver habilitado.",
+			"smsNotificationsDescription": "A SatsRoute lhe enviará notificações por SMS quando isto estiver habilitado.",
 			"theme": "Cor do tema",
 			"tipPrompt": "Mostrar opção gorjetas",
 			"tipPromptDescription": "Pergunte às pessoas se elas querem acrescentar uma gorjeta antes de pagar sua fatura",
@@ -465,7 +465,7 @@
 		"cancel": "Cancelar",
 		"message": "Mensagem",
 		"fundingAmount": "Montante de financiamento",
-		"ecashDesc": "Os tokens Ecash são financiados com alguma quantidade de bitcoin. Eles podem ser resgatados em coinos ou carregados em outras carteiras. Use-os para dar bitcoin a alguém que pode não ter uma carteira ainda, simplesmente enviando-lhes a string token ou compartilhando a URL. Saiba mais em",
+		"ecashDesc": "Os tokens Ecash são financiados com alguma quantidade de bitcoin. Eles podem ser resgatados em SatsRoute ou carregados em outras carteiras. Use-os para dar bitcoin a alguém que pode não ter uma carteira ainda, simplesmente enviando-lhes a string token ou compartilhando a URL. Saiba mais em",
 		"maxFeeDesc": "Define um limite superior na taxa de roteamento da rede. Se definido demasiado baixo o pagamento pode falhar. Você pode colocá-lo mais alto e tentar novamente. Nós debitamos o valor total ao tentar o pagamento, mas creditamos de volta qualquer parte não utilizada.",
 		"ecashToken": "Token de Ecash",
 		"lnurlw": "LNURLW",

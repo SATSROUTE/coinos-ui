@@ -178,7 +178,7 @@
         <form method="POST" use:enhance class="space-y-2">
           <input name="ssid" placeholder="Wifi SSID" class="input" />
           <input name="key" placeholder="Wifi password" class="input" />
-          <input name="token" bind:value={token} placeholder="Coinos API token" class="input" />
+          <input name="token" bind:value={token} placeholder="SatsRoute API token" class="input" />
           <button type="submit" class="btn">Generate Config</button>
         </form>
       {/if}

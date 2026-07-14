@@ -68,7 +68,7 @@
     >Admin API token <span class="font-normal">(Optional)</span></label
   >
   <p class="text-secondary my-2">
-    Coinos can automatically mark orders as Paid if you provide an API token.
+    SatsRoute can automatically mark orders as Paid if you provide an API token.
     <input
       class="my-4"
       type="text"

@@ -12,8 +12,8 @@
         <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-primary">
           <img src="/icons/logo-symbol.svg" class="w-20" />
           <div>
-            <div class="text-xl">Coinos</div>
-            <div class="text-secondary">https://mint.coinos.io</div>
+            <div class="text-xl">SatsRoute</div>
+            <div class="text-secondary">https://mint.satsroute.com</div>
           </div>
         </div>
       </a>

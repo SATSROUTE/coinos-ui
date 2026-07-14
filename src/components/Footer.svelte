@@ -8,8 +8,8 @@
       url: "nostr:nprofile1qy28wue69uhnzv3h9cczuvpwxyargwpk8yhszxrhwvaz7tmhda6zucnjd9nksarzdak8gtnwv46z7qpqw27mc4aa6m0ufe3xs5z3m6qyr52gc0rglept7vqlwx4xeaf72tasv5xyqv",
       titleID: "nostr",
     },
-    { url: "https://t.me/coinoswallet", titleID: "telegram" },
-    { url: "https://linktr.ee/coinos.io", titleID: "linktree" },
+    { url: "https://t.me/satsroute", titleID: "telegram" },
+    { url: "https://linktr.ee/satsroute.com", titleID: "linktree" },
   ];
 
   const companyLinks = [

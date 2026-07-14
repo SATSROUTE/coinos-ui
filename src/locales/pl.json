@@ -76,7 +76,7 @@
 		"locations": {
 			"viewMap": "Zobacz mapę",
 			"header": "Lokalizacja",
-			"description": "Ponad 500 firm na całym świecie akceptuje bitcoin z Coinos. Mamy nadzieję, że twój będzie następny!"
+			"description": "Ponad 500 firm na całym świecie akceptuje bitcoin z SatsRoute. Mamy nadzieję, że twój będzie następny!"
 		}
 	},
 	"error": {
@@ -93,14 +93,14 @@
 		},
 		"compatibility": {
 			"question": "Potrzebuję jakiegoś specjalnego urządzenia lub oprogramowania?",
-			"answer": "Nie, Coinos pracuje wszędzie, gdzie ma Internet. Kupcy mogą używać go na tablecie lub umieścić kod QR dla klientów do skanowania za pomocą telefonu."
+			"answer": "Nie, SatsRoute pracuje wszędzie, gdzie ma Internet. Kupcy mogą używać go na tablecie lub umieścić kod QR dla klientów do skanowania za pomocą telefonu."
 		},
 		"safety": {
 			"question": "Kiedy moje fundusze ustaną?",
 			"answer": "Płatności błyskawiczne są rozliczane natychmiast. Możesz wycofać swoje saldo do innego portfela w ciągu kilku sekund. Złoża łańcuchowe wymagają średnio 5- 10 minut, aby je potwierdzić."
 		},
 		"pos": {
-			"question": "Czy Coinos może integrować się z moim istniejącym PoS?",
+			"question": "Czy SatsRoute może integrować się z moim istniejącym PoS?",
 			"answer": "Zalecamy wprowadzenie sprzedaży do istniejącego PoS jako transakcji gotówkowych."
 		},
 		"bitcoin": {
@@ -150,7 +150,7 @@
 	"jobs": {
 		"header": "Miejsca pracy",
 		"subheader": "Aktualne otwarcie",
-		"pitch1": "Coinos aktywnie poszukuje deweloperów, którzy dołączą do naszego rozwijającego się zespołu (pełnoetatowy lub niepełny, pracujący zdalnie OK).",
+		"pitch1": "SatsRoute aktywnie poszukuje deweloperów, którzy dołączą do naszego rozwijającego się zespołu (pełnoetatowy lub niepełny, pracujący zdalnie OK).",
 		"pitch2": "Podekscytowany pracą nad bitcoinami open source? Następnie spojrzeć na nasze repozytoria na",
 		"github": "GitHub",
 		"pitch3": "Jeśli myślisz, że możesz coś zrobić, chętnie się odezwiemy. Wyślij nam swoje CV do"
@@ -338,7 +338,7 @@
 			"emailNotifications": "Powiadomienia e-mail",
 			"emailNotificationsDescription": "Otrzymuj powiadomienie przez e-mail, gdy zmiana następuje na koncie lub gdy ludzie wysyłają Ci płatności.",
 			"smsNotifications": "SMS Powiadomienia",
-			"smsNotificationsDescription": "Coinos wyśle Ci powiadomienia tekstowe, gdy jest to włączone.",
+			"smsNotificationsDescription": "SatsRoute wyśle Ci powiadomienia tekstowe, gdy jest to włączone.",
 			"theme": "Kolor Motyw",
 			"tipPrompt": "Prompt for tips",
 			"tipPromptDescription": "Zapytaj ludzi, czy chcą dodać napiwek przed zapłaceniem faktur",
@@ -429,7 +429,7 @@
 		"createFund": "Utwórz fundusz",
 		"withdraw": "Wycofywanie",
 		"fast": "Szybko",
-		"ecashDesc": "Monety Ecash są finansowane z bitcoinów. Mogą być one odkupione w zamian za zapłatę za piorun równą ich wartości lub załadowane z powrotem na konto coinos w dowolnym czasie. Można je również przenieść do innych portfeli ekasowych w całości lub częściowo. Możesz ich użyć, aby dać bitcoin komuś, kto nie ma portfela, wysyłając do nich sygnał lub dzieląc się linkiem. Dowiedz się więcej na",
+		"ecashDesc": "Monety Ecash są finansowane z bitcoinów. Mogą być one odkupione w zamian za zapłatę za piorun równą ich wartości lub załadowane z powrotem na konto SatsRoute w dowolnym czasie. Można je również przenieść do innych portfeli ekasowych w całości lub częściowo. Możesz ich użyć, aby dać bitcoin komuś, kto nie ma portfela, wysyłając do nich sygnał lub dzieląc się linkiem. Dowiedz się więcej na",
 		"ecashToken": "Symbol ecash",
 		"medium": "Średni",
 		"maxFeeDesc": "Ustaw górny limit opłaty za routing sieci. Jeżeli płatność jest zbyt niska, może się nie udać. Możesz ustawić wyżej i spróbować jeszcze raz. Obciążymy pełną kwotę podczas próby zapłaty, ale spieniężymy każdą niewykorzystaną część.",

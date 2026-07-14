@@ -76,7 +76,7 @@
 		"locations": {
 			"viewMap": "Visualizza mappa",
 			"header": "Località",
-			"description": "Oltre 500 aziende in tutto il mondo accettano bitcoin con Coinos. Ci auguriamo che la vostra sia la prossima!"
+			"description": "Oltre 500 aziende in tutto il mondo accettano bitcoin con SatsRoute. Ci auguriamo che la vostra sia la prossima!"
 		}
 	},
 	"error": {
@@ -93,14 +93,14 @@
 		},
 		"compatibility": {
 			"question": "Ho bisogno di qualche dispositivo o software speciale?",
-			"answer": "No, Coinos funziona ovunque ci sia Internet. Gli esercenti possono utilizzarlo su un tablet o inserire un codice QR che i clienti possono scansionare con il proprio telefono."
+			"answer": "No, SatsRoute funziona ovunque ci sia Internet. Gli esercenti possono utilizzarlo su un tablet o inserire un codice QR che i clienti possono scansionare con il proprio telefono."
 		},
 		"safety": {
 			"question": "Quando vengono versati i miei fondi?",
 			"answer": "I pagamenti Lightning vengono regolati istantaneamente. È possibile ritirare il proprio saldo in un altro portafoglio in pochi secondi. I depositi on-chain richiedono in media 5-10 minuti per essere confermati."
 		},
 		"pos": {
-			"question": "Coinos può integrarsi con il mio PoS?",
+			"question": "SatsRoute può integrarsi con il mio PoS?",
 			"answer": "Consigliamo d'inserire le vendite nel tuo PoS esistente come transazioni in contanti."
 		},
 		"bitcoin": {
@@ -150,7 +150,7 @@
 	"jobs": {
 		"header": "Lavoro",
 		"subheader": "Offerte attuali",
-		"pitch1": "Coinos è attivamente alla ricerca di sviluppatori da inserire nel nostro team in crescita (a tempo pieno o part-time, è possibile lavorare da remoto).",
+		"pitch1": "SatsRoute è attivamente alla ricerca di sviluppatori da inserire nel nostro team in crescita (a tempo pieno o part-time, è possibile lavorare da remoto).",
 		"pitch2": "Siete entusiasti di lavorare su bitcoin open source? Allora date un'occhiata ai nostri repository su",
 		"github": "GitHub",
 		"pitch3": "Se pensate di poter avere un effetto, saremmo lieti di sentirvi. Inviateci il vostro curriculum a"
@@ -338,7 +338,7 @@
 			"emailNotifications": "Notifiche e-mail",
 			"emailNotificationsDescription": "Ricevi notifiche via e-mail quando si verifica una modifica sul tuo account o quando le persone ti inviano i pagamenti.",
 			"smsNotifications": "Notifiche SMS",
-			"smsNotificationsDescription": "Coinos ti invierà notifiche di testo quando questo è attivo.",
+			"smsNotificationsDescription": "SatsRoute ti invierà notifiche di testo quando questo è attivo.",
 			"theme": "Colore Tema",
 			"tipPrompt": "Richiesta per mance",
 			"tipPromptDescription": "Chiedi alle persone se vogliono aggiungere una mancia prima di pagare le fatture",
@@ -429,7 +429,7 @@
 		"createFund": "Creare un fondo",
 		"withdraw": "Prelievo",
 		"fast": "Veloce",
-		"ecashDesc": "I token Ecash sono finanziati con bitcoin. Possono essere riscattati in cambio di un pagamento lightning pari al loro valore o caricati nuovamente in un conto Coinos in qualsiasi momento. Possono anche essere trasferiti ad altri portafogli ecash, in tutto o in parte. Si possono usare per regalare bitcoin a qualcuno che non ha un portafoglio, inviandogli il token via SMS o condividendone il link. Per saperne di più",
+		"ecashDesc": "I token Ecash sono finanziati con bitcoin. Possono essere riscattati in cambio di un pagamento lightning pari al loro valore o caricati nuovamente in un conto SatsRoute in qualsiasi momento. Possono anche essere trasferiti ad altri portafogli ecash, in tutto o in parte. Si possono usare per regalare bitcoin a qualcuno che non ha un portafoglio, inviandogli il token via SMS o condividendone il link. Per saperne di più",
 		"ecashToken": "Token Ecash",
 		"medium": "Media",
 		"maxFeeDesc": "Impostare un limite massimo per la commissione di routing della rete. Se impostato troppo basso, il pagamento potrebbe non andare a buon fine. È possibile impostarlo più alto e riprovare. Durante il tentativo di pagamento viene addebitato l'intero importo, ma viene riaccreditata la parte non utilizzata.",

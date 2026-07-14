@@ -7,7 +7,7 @@
 		"header": "À Propos",
 		"locations": {
 			"header": "Commerces",
-			"description": "Il y a déjà des commerces qui acceptent bitcoin utilisant un point de vente Coinos. Si vous utilisez notre appli, s'il vous plait <a href=\"mailto:contact@coinos.io\" class=\"underline underline-offset-4\">faites-le-nous savoir!</a>",
+			"description": "Il y a déjà des commerces qui acceptent bitcoin utilisant un point de vente SatsRoute. Si vous utilisez notre appli, s'il vous plait <a href=\"mailto:contact@satsroute.com\" class=\"underline underline-offset-4\">faites-le-nous savoir!</a>",
 			"viewMap": "Voir la carte"
 		},
 		"team": {
@@ -34,18 +34,18 @@
 		"header": "FAQ",
 		"cost": {
 			"question": "Combien cela coûte ?",
-			"answer": "Recevoir des paiements sur votre compte est gratuit. Les retraits vers des portefeuilles externes entraînent des frais minimes qui varient en fonction des conditions du réseau. Nous facturons 0,1% de conversion entre le réseau lightning et le réseau on-chain. L'envoie à d'autres comptes Coinos est gratuit."
+			"answer": "Recevoir des paiements sur votre compte est gratuit. Les retraits vers des portefeuilles externes entraînent des frais minimes qui varient en fonction des conditions du réseau. Nous facturons 0,1% de conversion entre le réseau lightning et le réseau on-chain. L'envoie à d'autres comptes SatsRoute est gratuit."
 		},
 		"compatibility": {
 			"question": "Ai-je besoin d'un appareil ou d'un logiciel spécial?",
-			"answer": "Non, Coinos est une application sur navigateur web qui fonctionne partout où il y a Internet. Les commerçants peuvent l'utiliser sur une tablette et afficher un QR code pour que les clients puissent le scanner avec leur téléphone."
+			"answer": "Non, SatsRoute est une application sur navigateur web qui fonctionne partout où il y a Internet. Les commerçants peuvent l'utiliser sur une tablette et afficher un QR code pour que les clients puissent le scanner avec leur téléphone."
 		},
 		"safety": {
 			"question": "Quand mes fonds seront-ils versés ?",
 			"answer": "Les paiements lightning sont réglés instantanément. Vous pouvez retirer votre solde vers un autre portefeuille en quelques secondes. Les dépôts on-chain prennent en moyenne 5-10 minutes pour être confirmés."
 		},
 		"pos": {
-			"question": "Coinos peut-il s'intégrer à mon point de vente existant?",
+			"question": "SatsRoute peut-il s'intégrer à mon point de vente existant?",
 			"answer": "Nous recommandons d'entrer les ventes dans votre appareil de point de vente existant comme des transactions en espèces."
 		},
 		"bitcoin": {
@@ -160,7 +160,7 @@
 	"jobs": {
 		"header": "Emplois",
 		"subheader": "Postes disponibles actuels",
-		"pitch1": "coinos recherche des développeurs pour rejoindre notre équipe en croissance (temps plein ou partiel, télétravail possible)",
+		"pitch1": "SatsRoute recherche des développeurs pour rejoindre notre équipe en croissance (temps plein ou partiel, télétravail possible)",
 		"pitch2": "Voulez vous travailler en open source sur nos projets bitcoin ? Regardez nos dépôts",
 		"github": "GitHub",
 		"pitch3": "Si vous estimez pouvoir avoir un impact positif, nous vous invitons à participer. Veuillez envoyer votre CV à"
@@ -319,7 +319,7 @@
 			"scan": "Scannez",
 			"paste": "Collez",
 			"next": "Suivant",
-			"placeholder": "Collez une adresse de bitcoin, facture de lightning ou nom d'utilisateur coinos",
+			"placeholder": "Collez une adresse de bitcoin, facture de lightning ou nom d'utilisateur SatsRoute",
 			"makeQR": "QR"
 		},
 		"requestPayment": "Demander un Paiement",

@@ -10,7 +10,7 @@
   let { data } = $props();
   let { nfc, text } = $derived(data);
   let { username } = $derived(data.subject);
-  let url = `https://coinos.io/p/${username.toLowerCase()}`;
+  let url = `https://satsroute.com/p/${username.toLowerCase()}`;
 
   let lnurl = $derived(
     `https://${PUBLIC_DOMAIN}/ln/${encode(
@@ -46,7 +46,7 @@
     {/if}
     <Qr {text} icon="icon.png" />
     <div class="text-center text-4xl font-bold break-all">
-      coinos.io/{username.toLowerCase()}
+      satsroute.com/{username.toLowerCase()}
     </div>
   </div>
 

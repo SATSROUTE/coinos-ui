@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/start",
-  "name": "Coinos",
-  "description": "The easiest way to get started with Bitcoin",
-  "short_name": "Coinos",
+  "name": "SatsRoute",
+  "description": "Bitcoin, Lightning e stablecoins (USDt, DePix) numa carteira simples",
+  "short_name": "SatsRoute",
   "icons": [
     {
       "src": "/icon-512x512.webp",

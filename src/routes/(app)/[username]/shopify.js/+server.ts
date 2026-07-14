@@ -14,7 +14,7 @@ window.addEventListener('load', async () => {
     return f();
   };
 
-  await wait(() => ["coinos", "bitcoin", "btc", "btcpayserver", "btcpay server"].some(v => ~(document.querySelector(".payment-method-list__item__info").innerText.toLowerCase().indexOf(v))));
+  await wait(() => ["satsroute", "coinos", "bitcoin", "btc", "btcpayserver", "btcpay server"].some(v => ~(document.querySelector(".payment-method-list__item__info").innerText.toLowerCase().indexOf(v))));
 
 	let sat = (s) => {
 		s = Math.abs(s);

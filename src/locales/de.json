@@ -20,7 +20,7 @@
 		},
 		"locations": {
 			"header": "Standorte",
-			"description": "Hier finden Sie einige Unternehmen, welche bereits Zahlungen mit Bitcoin über Coinos akzeptieren. Wir hoffen, dass Ihr Unternehmen das nächste sein wird!",
+			"description": "Hier finden Sie einige Unternehmen, welche bereits Zahlungen mit Bitcoin über SatsRoute akzeptieren. Wir hoffen, dass Ihr Unternehmen das nächste sein wird!",
 			"viewMap": "Karte anzeigen"
 		}
 	},
@@ -38,22 +38,22 @@
 		},
 		"cost": {
 			"question": "Was kostet das?",
-			"answer": "Zahlungen auf Ihr Konto zu erhalten ist kostenlos. Auszahlungen an externe Wallets verursachen eine geringe Gebühr, die je nach Netzwerkbedingungen variiert. Wir berechnen 0,1% für die Umwandlung zwischen Lightning und On-Chain Bitcoin. Das Senden zu anderen Coinos-Konten ist kostenlos."
+			"answer": "Zahlungen auf Ihr Konto zu erhalten ist kostenlos. Auszahlungen an externe Wallets verursachen eine geringe Gebühr, die je nach Netzwerkbedingungen variiert. Wir berechnen 0,1% für die Umwandlung zwischen Lightning und On-Chain Bitcoin. Das Senden zu anderen SatsRoute-Konten ist kostenlos."
 		},
 		"individuals": {
 			"question": "Wer kann es nutzen?",
-			"answer": "Jeder, überall auf der Welt. Coinos ist sowohl für Einzelpersonen als auch für Unternehmen geeignet."
+			"answer": "Jeder, überall auf der Welt. SatsRoute ist sowohl für Einzelpersonen als auch für Unternehmen geeignet."
 		},
 		"compatibility": {
 			"question": "Benötige ich ein spezielles Gerät oder eine spezielle Software?",
-			"answer": "Nein, Coinos ist eine Web-App, die überall funktioniert, wo es Internet gibt. Händler könnten es auf einem Tablet verwenden oder einen QR-Code anbieten, den Kunden mit ihrem Handy scannen können."
+			"answer": "Nein, SatsRoute ist eine Web-App, die überall funktioniert, wo es Internet gibt. Händler könnten es auf einem Tablet verwenden oder einen QR-Code anbieten, den Kunden mit ihrem Handy scannen können."
 		},
 		"safety": {
 			"question": "Wann wird mein Guthaben beglichen?",
 			"answer": "Lightning-Zahlungen werden sofort beglichen. Sie können Ihr Guthaben innerhalb von Sekunden auf eine andere Wallet übertragen. On-Chain Einzahlungen dauern im Durchschnitt 5-10 Minuten zur Bestätigung."
 		},
 		"pos": {
-			"question": "Kann Coinos mit meinem vorhandenen PoS integriert werden?",
+			"question": "Kann SatsRoute mit meinem vorhandenen PoS integriert werden?",
 			"answer": "Wir empfehlen, Verkäufe in Ihrem vorhandenen PoS als Bartransaktionen einzugeben."
 		},
 		"accounting": {
@@ -182,7 +182,7 @@
 		"register": "Register",
 		"home": "Zum Anfang"
 	},
-	"newSiteHeader": "Kommen Sie zu unserer <a href=\"/launch\" class=\"underline underline-offset-4 text-black hover:opacity-80\">Eröffnungsfeier</a> in Vancouver am 26. Oktober! Auf der Suche nach der alten Coinos-Version? Besuchen Sie <a href=\"https://classic.coinos.io\" class=\"underline underline-offset-4 text-black hover:opacity-80\">classic.coinos.io</a>",
+	"newSiteHeader": "Kommen Sie zu unserer <a href=\"/launch\" class=\"underline underline-offset-4 text-black hover:opacity-80\">Eröffnungsfeier</a> in Vancouver am 26. Oktober! Auf der Suche nach der alten SatsRoute-Version? Besuchen Sie <a href=\"https://classic.satsroute.com\" class=\"underline underline-offset-4 text-black hover:opacity-80\">classic.satsroute.com</a>",
 	"news": {
 		"header": "News",
 		"subheader": "Letzte Updates",
@@ -227,7 +227,7 @@
 			"scan": "Scannen",
 			"paste": "Einfügen",
 			"next": "Weiter",
-			"placeholder": "Geben Sie eine Bitcoin-Adresse, eine Lightning-Rechnung oder einen Coinos-Benutzernamen ein",
+			"placeholder": "Geben Sie eine Bitcoin-Adresse, eine Lightning-Rechnung oder einen SatsRoute-Benutzernamen ein",
 			"makeQR": "QR"
 		},
 		"settings": {
@@ -247,7 +247,7 @@
 			"emailNotifications": "E-Mail-Benachrichtigungen",
 			"emailNotificationsDescription": "Sie werden per E-Mail benachrichtigt, wenn eine Änderung auf Ihrem Konto vorgenommen wurde oder Ihnen jemand Zahlungen sendet.",
 			"smsNotifications": "SMS-Benachrichtigungen",
-			"smsNotificationsDescription": "Coinos wird Benachrichtigungen per SMS zusenden, wenn diese Funktion aktiviert ist.",
+			"smsNotificationsDescription": "SatsRoute wird Benachrichtigungen per SMS zusenden, wenn diese Funktion aktiviert ist.",
 			"theme": "Farbdesign",
 			"themeDescription": "Wählen Sie aus unseren Standard-Farbdesigns.",
 			"localCurrency": "Landeswährung",

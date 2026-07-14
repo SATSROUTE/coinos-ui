@@ -11,6 +11,6 @@
   <div>
     We keep records of payment history associated to accounts and may be
     obligated to share our records with financial authorities. You may request
-    that your account be deleted by visiting https://coinos.io/removal
+    that your account be deleted by visiting https://satsroute.com/removal
   </div>
 </div>

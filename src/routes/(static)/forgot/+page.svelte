@@ -16,6 +16,6 @@
 
   <div class="text-secondary">
     {$t("login.resetDesc")}
-    <a href="mailto:support@coinos.io" class="font-bold">support@coinos.io</a>
+    <a href="mailto:support@satsroute.com" class="font-bold">support@satsroute.com</a>
   </div>
 </div>

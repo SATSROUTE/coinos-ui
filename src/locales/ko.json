@@ -76,7 +76,7 @@
 		"locations": {
 			"viewMap": "지도 보기",
 			"header": "회사연혁",
-			"description": "전세계 500 개 이상의 기업은 Coinos와 Bitcoin을 수용하고 있습니다. 우리는 당신의 다음이 될 희망!"
+			"description": "전세계 500 개 이상의 기업은 SatsRoute와 Bitcoin을 수용하고 있습니다. 우리는 당신의 다음이 될 희망!"
 		}
 	},
 	"error": {
@@ -93,14 +93,14 @@
 		},
 		"compatibility": {
 			"question": "특별한 장치 또는 소프트웨어가 필요합니까?",
-			"answer": "아니요, Coinos는 인터넷을 가지고 있습니다. 상인은 정제에 그것을 사용하거나 그들의 전화로 검사하기 위하여 고객을 위한 QR 부호를 끼워넣을지도 모릅니다."
+			"answer": "아니요, SatsRoute는 인터넷을 가지고 있습니다. 상인은 정제에 그것을 사용하거나 그들의 전화로 검사하기 위하여 고객을 위한 QR 부호를 끼워넣을지도 모릅니다."
 		},
 		"safety": {
 			"question": "내 자금이 정착 할 때?",
 			"answer": "번개 지불은 즉시 해결됩니다. 몇 초 안에 다른 지갑에 잔액을 인출할 수 있습니다. 사슬 예금은 5-10 분을 평균에 확인합니다."
 		},
 		"pos": {
-			"question": "Coinos가 기존 PoS와 통합할 수 있나요?",
+			"question": "SatsRoute가 기존 PoS와 통합할 수 있나요?",
 			"answer": "기존 PoS에서 현금 거래로 판매하는 것이 좋습니다."
 		},
 		"bitcoin": {
@@ -150,7 +150,7 @@
 	"jobs": {
 		"header": "한국어",
 		"subheader": "현재 오프닝",
-		"pitch1": "Coinos는 개발자가 성장하는 팀 (풀 타임 또는 파트 타임, 원격 작업 OK)에 참여하도록 적극적으로 찾고 있습니다.",
+		"pitch1": "SatsRoute는 개발자가 성장하는 팀 (풀 타임 또는 파트 타임, 원격 작업 OK)에 참여하도록 적극적으로 찾고 있습니다.",
 		"pitch2": "오픈 소스 비트 코인에서 작업에 대해 흥분? 그런 다음 우리의 저장소를 살펴보십시오",
 		"github": "프로젝트",
 		"pitch3": "당신은 충격을 만들 수 있다고 생각하면, 우리는 당신을 듣고 사랑합니다. 자주 묻는 질문"
@@ -338,7 +338,7 @@
 			"emailNotifications": "이메일 알림",
 			"emailNotificationsDescription": "계정에서 변경이 발생하거나 사용자가 지불을 보낼 때 이메일을 통해 통보하십시오.",
 			"smsNotifications": "SMS 메시지 공지사항",
-			"smsNotificationsDescription": "Coinos가 활성화 될 때 텍스트 알림을 보낼 것입니다.",
+			"smsNotificationsDescription": "SatsRoute가 활성화 될 때 텍스트 알림을 보낼 것입니다.",
 			"theme": "색깔: 백색 이름 *",
 			"tipPrompt": "팁에 대한 약속",
 			"tipPromptDescription": "청구서를 지불하기 전에 팁을 추가하고 싶은 사람들",

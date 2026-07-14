@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://coinos.io/sitemap.xml
+Sitemap: https://satsroute.com/sitemap.xml

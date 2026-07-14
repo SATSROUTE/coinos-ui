@@ -20,7 +20,7 @@
 		},
 		"locations": {
 			"header": "Ubicaciones",
-			"description": "Aquí hay algunos negocios que aceptan bitcoin con Coinos. ¡Esperamos que el tuyo sea el siguiente!",
+			"description": "Aquí hay algunos negocios que aceptan bitcoin con SatsRoute. ¡Esperamos que el tuyo sea el siguiente!",
 			"viewMap": "Ver mapa"
 		}
 	},
@@ -38,14 +38,14 @@
 		},
 		"compatibility": {
 			"question": "¿Necesito algún dispositivo o software especial?",
-			"answer": "No, Coinos funciona en cualquier lugar que tenga Internet. Los comerciantes pueden usarlo en una tableta o colocar un código QR para que los clientes lo escaneen con su teléfono."
+			"answer": "No, SatsRoute funciona en cualquier lugar que tenga Internet. Los comerciantes pueden usarlo en una tableta o colocar un código QR para que los clientes lo escaneen con su teléfono."
 		},
 		"safety": {
 			"question": "¿Cuándo se liquidan mis fondos?",
 			"answer": "Los pagos de Lightning se liquidan instantáneamente. Puedes retirar tu saldo a otra cartera en segundos. Los depósitos en cadena tardan de 5 a 10 minutos en confirmarse en promedio."
 		},
 		"pos": {
-			"question": "¿Puede Coinos integrarse con mi PoS existente?",
+			"question": "¿Puede SatsRoute integrarse con mi PoS existente?",
 			"answer": "Recomendamos registrar las ventas en tu PoS existente como transacciones en efectivo."
 		},
 		"bitcoin": {
@@ -95,7 +95,7 @@
 	"jobs": {
 		"header": "Empleos",
 		"subheader": "Vacantes Actuales",
-		"pitch1": "Coinos está buscando activamente desarrolladores para unirse a nuestro equipo en crecimiento (tiempo completo o parcial, trabajo remoto OK).",
+		"pitch1": "SatsRoute está buscando activamente desarrolladores para unirse a nuestro equipo en crecimiento (tiempo completo o parcial, trabajo remoto OK).",
 		"pitch2": "¿Te emociona trabajar en bitcoin de código abierto? Entonces echa un vistazo a nuestros repositorios en",
 		"github": "GitHub",
 		"pitch3": "Si crees que puedes tener un impacto, nos encantaría saber de ti. Envíanos tu currículum a"
@@ -218,7 +218,7 @@
 			"scan": "Escanear",
 			"paste": "Pegar",
 			"next": "Siguiente",
-			"placeholder": "Pegue una dirección de bitcoin, factura lightning o nombre de usuario de coinos"
+			"placeholder": "Pegue una dirección de bitcoin, factura lightning o nombre de usuario de SatsRoute"
 		},
 		"settings": {
 			"shopify": "Integración con Shopify",
@@ -254,7 +254,7 @@
 			"emailNotifications": "Notificaciones por Correo Electrónico",
 			"emailNotificationsDescription": "Reciba notificaciones por correo electrónico cuando ocurra un cambio en su cuenta o cuando la gente le envíe pagos.",
 			"smsNotifications": "Notificaciones SMS",
-			"smsNotificationsDescription": "Coinos le enviará notificaciones de texto cuando esto esté habilitado.",
+			"smsNotificationsDescription": "SatsRoute le enviará notificaciones de texto cuando esto esté habilitado.",
 			"theme": "Tema de Color",
 			"tipPrompt": "Solicitar propinas",
 			"tipPromptDescription": "Pregunte a las personas si desean agregar una propina antes de pagar sus facturas",
@@ -444,7 +444,7 @@
 		"cancel": "Cancelar",
 		"message": "Mensaje",
 		"fundingAmount": "Cuantía de financiación",
-		"ecashDesc": "Los tokens de Ecash se cargan con una cantidad de Bitcoin. Se pueden canjear de nuevo en Coinos o cargar en otras billeteras. Úsalos para regalar Bitcoin a alguien que aún no tenga una billetera, simplemente enviándole el token por mensaje de texto o compartiendo el enlace. Aprende más en",
+		"ecashDesc": "Los tokens de Ecash se cargan con una cantidad de Bitcoin. Se pueden canjear de nuevo en SatsRoute o cargar en otras billeteras. Úsalos para regalar Bitcoin a alguien que aún no tenga una billetera, simplemente enviándole el token por mensaje de texto o compartiendo el enlace. Aprende más en",
 		"maxFeeDesc": "Establece un límite superior en la tasa de enrutamiento de la red. Si se establece demasiado bajo el pago puede fallar. Puedes ponerlo más alto e intentarlo de nuevo. Debitamos toda la cantidad mientras intentamos el pago pero acreditamos cualquier parte no utilizada.",
 		"ecashToken": "Ecash token",
 		"lnurlw": "LNURLw",

@@ -92,7 +92,7 @@
 
     <p class="text-secondary text-lg">
       {$t("user.support.fillForm")}
-      <a class="underline" href="mailto:support@coinos.io">support@coinos.io</a>
+      <a class="underline" href="mailto:support@satsroute.com">support@satsroute.com</a>
       {$t("user.support.doOurBest")}
     </p>
 

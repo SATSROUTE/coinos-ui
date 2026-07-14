@@ -30,14 +30,14 @@
   <h1 class="text-4xl">Documentation</h1>
 
   <p class="text-secondary">
-    Coinos is free and open source software. The code is available at <a
-      href="https://github.com/coinos"
-      class="text-secondary underline">github.com/coinos</a
+    SatsRoute is free and open source software. The code is available at <a
+      href="https://github.com/satsroute"
+      class="text-secondary underline">github.com/satsroute</a
     >
   </p>
 
   <p class="text-secondary">
-    Coinos has a REST API that can be used to register accounts and make
+    SatsRoute has a REST API that can be used to register accounts and make
     payments. The following examples show how you can call the API with <a
       href="https://curl.se/"
       class="text-secondary underline">curl</a

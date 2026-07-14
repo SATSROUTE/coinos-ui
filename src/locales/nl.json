@@ -76,7 +76,7 @@
 		"locations": {
 			"viewMap": "Kaart bekijken",
 			"header": "Locaties",
-			"description": "Meer dan 500 bedrijven wereldwijd accepteren Bitcoin met Coinos. We hopen dat de jouwe de volgende zal zijn!"
+			"description": "Meer dan 500 bedrijven wereldwijd accepteren Bitcoin met SatsRoute. We hopen dat de jouwe de volgende zal zijn!"
 		}
 	},
 	"error": {
@@ -89,18 +89,18 @@
 		"header": "Veelgestelde vragen",
 		"cost": {
 			"question": "Wat kost het?",
-			"answer": "Het ontvangen van betalingen op jouw rekening is gratis. Verzenden naar andere Coinos is gratis. Verzendingen naar externe portemonnees zijn gratis als je hetzelfde netwerk gebruikt waar je van ontvangen hebt. In andere gevallen is er een vergoeding van 0,4% voor Bitcoin en 0,1 voor Lightning of Liquid."
+			"answer": "Het ontvangen van betalingen op jouw rekening is gratis. Verzenden naar andere SatsRoute is gratis. Verzendingen naar externe portemonnees zijn gratis als je hetzelfde netwerk gebruikt waar je van ontvangen hebt. In andere gevallen is er een vergoeding van 0,4% voor Bitcoin en 0,1 voor Lightning of Liquid."
 		},
 		"compatibility": {
 			"question": "Heb ik een speciaal apparaat of software nodig?",
-			"answer": "Nee, Coinos werkt overal met internet. Handelaars kunnen het gebruiken op een smartphone of tablet. Ook kun je een QR-code printen die klanten met hun telefoon kunnen scannen."
+			"answer": "Nee, SatsRoute werkt overal met internet. Handelaars kunnen het gebruiken op een smartphone of tablet. Ook kun je een QR-code printen die klanten met hun telefoon kunnen scannen."
 		},
 		"safety": {
 			"question": "Wanneer is mijn transactie geregeld?",
-			"answer": "Coinos werkt op elk apparaat met Internet en een webbrowser. Je ontvangt notificaties van binnenkomende betalingen in de app, via e-mail en push notificaties. We hebben een PoS terminal en bonnen printer beschikbaar voor diegenen die een fysieke notificatie willen ontvangen."
+			"answer": "SatsRoute werkt op elk apparaat met Internet en een webbrowser. Je ontvangt notificaties van binnenkomende betalingen in de app, via e-mail en push notificaties. We hebben een PoS terminal en bonnen printer beschikbaar voor diegenen die een fysieke notificatie willen ontvangen."
 		},
 		"pos": {
-			"question": "Kan ik Coinos combineren met mijn bestaande kassasysteem?",
+			"question": "Kan ik SatsRoute combineren met mijn bestaande kassasysteem?",
 			"answer": "We kunnen verkopen automatisch in Square vastleggen. Als je een ander kassasysteem gebruikt, raden we aan Bitcoin als cash in jouw bestaande kassasysteem aan te slaan."
 		},
 		"bitcoin": {
@@ -109,7 +109,7 @@
 		}
 	},
 	"footer": {
-		"company": "Over Coinos",
+		"company": "Over SatsRoute",
 		"followUs": "Volg ons",
 		"github": "GitHub",
 		"linktree": "Linktree",
@@ -150,7 +150,7 @@
 	"jobs": {
 		"header": "Vacatures",
 		"subheader": "Huidige vacatures",
-		"pitch1": "Coinos is actief op zoek naar ontwikkelaars om deel te nemen aan ons groeiende team (full-time of part-time, remote working OK).",
+		"pitch1": "SatsRoute is actief op zoek naar ontwikkelaars om deel te nemen aan ons groeiende team (full-time of part-time, remote working OK).",
 		"pitch2": "Vindt je het interessant om te werken aan open source Bitcoin? Bekijk dan onze repositories op",
 		"github": "GitHub",
 		"pitch3": "Als je denkt een impact te kunnen maken, horen we graag van je. Stuur ons je CV naar"
@@ -338,7 +338,7 @@
 			"emailNotifications": "E-mail notificaties",
 			"emailNotificationsDescription": "Ontvang een e-mail notificaftie als er een wijziging aan jouw account optreedt of wanneer mensen jou een betalingen sturen.",
 			"smsNotifications": "SMS notificaties",
-			"smsNotificationsDescription": "Coinos zal je sms-notificatie sturen wanneer dit is ingeschakeld.",
+			"smsNotificationsDescription": "SatsRoute zal je sms-notificatie sturen wanneer dit is ingeschakeld.",
 			"theme": "Kleur Thema",
 			"tipPrompt": "Vragen om fooi",
 			"tipPromptDescription": "Vraag mensen of ze een fooi willen geven bij het betalen van hun factuur",
@@ -429,7 +429,7 @@
 		"createFund": "Een fonds aanmaken",
 		"withdraw": "Opnemen",
 		"fast": "Snel",
-		"ecashDesc": "Ecash tokens worden gefinancierd met Bitcoin. Ze kunnen worden ingewisseld in ruil voor een lightning betaling gelijk aan hun waarde of elk moment worden teruggehaald in een coinos rekening. Ze kunnen ook geheel of gedeeltelijk worden overgedragen naar andere ecash portemonnees. Je zou ze kunnen gebruiken om Bitcoin te geven aan iemand die geen portemonnee heeft door de token naar hen te sms'en of een link te delen. Meer informatie op",
+		"ecashDesc": "Ecash tokens worden gefinancierd met Bitcoin. Ze kunnen worden ingewisseld in ruil voor een lightning betaling gelijk aan hun waarde of elk moment worden teruggehaald in een SatsRoute rekening. Ze kunnen ook geheel of gedeeltelijk worden overgedragen naar andere ecash portemonnees. Je zou ze kunnen gebruiken om Bitcoin te geven aan iemand die geen portemonnee heeft door de token naar hen te sms'en of een link te delen. Meer informatie op",
 		"ecashToken": "Ecash token",
 		"medium": "Middel",
 		"maxFeeDesc": "Stel een bovengrens in voor de kosten van de netwerkroutering. Als deze te laag is ingesteld kan de betaling mislukken. Je kunt het hoger instellen en het opnieuw proberen. We debiteren het volledige bedrag tijdens de betalingpoging, maar crediteren het ongebruikte deel.",

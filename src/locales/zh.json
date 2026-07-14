@@ -20,7 +20,7 @@
 		},
 		"locations": {
 			"header": "地点",
-			"description": "以下是一些接受 Coinos 比特币支付平台的企业，希望您的公司可以加入我们！",
+			"description": "以下是一些接受 SatsRoute 比特币支付平台的企业，希望您的公司可以加入我们！",
 			"viewMap": "查看地图"
 		}
 	},
@@ -38,14 +38,14 @@
 		},
 		"compatibility": {
 			"question": "我需要特殊的设备或软件吗？",
-			"answer": "不需要。Coinos 在任何有互联网的地方都可以使用。商家可以在平板上操作，或者展示二维码供顾客用手机扫描。"
+			"answer": "不需要。SatsRoute 在任何有互联网的地方都可以使用。商家可以在平板上操作，或者展示二维码供顾客用手机扫描。"
 		},
 		"safety": {
 			"question": "我的资金什么时候结算？",
 			"answer": "闪电支付会立即结算。您可以在几秒内将余额提现到其他钱包。链上存款平均需要 5-10 分钟确认。"
 		},
 		"pos": {
-			"question": "Coinos 可以与我现有的 PoS 集成吗？",
+			"question": "SatsRoute 可以与我现有的 PoS 集成吗？",
 			"answer": "我们建议将销售额作为现金交易输入到您现有的 PoS 中。"
 		},
 		"bitcoin": {
@@ -95,7 +95,7 @@
 	"jobs": {
 		"header": "工作",
 		"subheader": "当前职位空缺",
-		"pitch1": "Coinos 正在积极寻找开发人员加入我们不断壮大的团队（全职或兼职，远程工作都可以）。",
+		"pitch1": "SatsRoute 正在积极寻找开发人员加入我们不断壮大的团队（全职或兼职，远程工作都可以）。",
 		"pitch2": "对开源比特币的工作感到兴奋吗？那就看看我们的存储库",
 		"github": "GitHub",
 		"pitch3": "如果您认为自己可以产生影响，我们很乐意听取您的意见。将您的简历发送至"
@@ -218,7 +218,7 @@
 			"scan": "扫描",
 			"paste": "粘贴",
 			"next": "下一个",
-			"placeholder": "粘贴比特币地址、闪电发票或 coinos 用户名"
+			"placeholder": "粘贴比特币地址、闪电发票或 SatsRoute 用户名"
 		},
 		"settings": {
 			"shopify": "Shopify 集成",
@@ -254,7 +254,7 @@
 			"emailNotifications": "电子邮件通知",
 			"emailNotificationsDescription": "当您的帐户发生更改或有人向您付款时，您会收到电子邮件通知。",
 			"smsNotifications": "短信通知",
-			"smsNotificationsDescription": "启用此功能后，Coinos 会向您发送文本通知。",
+			"smsNotificationsDescription": "启用此功能后，SatsRoute 会向您发送文本通知。",
 			"theme": "颜色主题",
 			"tipPrompt": "提示小费",
 			"tipPromptDescription": "在支付发票前询问是否添加小费",

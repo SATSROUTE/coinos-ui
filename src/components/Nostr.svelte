@@ -45,7 +45,7 @@
     let sk = generateSecretKey();
     let pubkey = getPublicKey(sk);
 
-    connectUrl = `nostrconnect://${pubkey}?relay=${encodeURIComponent(nostrConnectRelay)}&perms=sign_event%3A1&name=Coinos&secret=${connectionSecret}`;
+    connectUrl = `nostrconnect://${pubkey}?relay=${encodeURIComponent(nostrConnectRelay)}&perms=sign_event%3A1&name=SatsRoute&secret=${connectionSecret}`;
 
     let relay = await Relay.connect(nostrConnectRelay);
     relay.subscribe([{ kinds: [24133], "#p": [pubkey] }], {
@@ -117,7 +117,7 @@
   };
 
   let signUrl = $derived(
-    `nostrsigner:${encodeURIComponent(JSON.stringify($eventToSign))}?compressionType=none&returnType=signature&type=sign_event&appName=Coinos`,
+    `nostrsigner:${encodeURIComponent(JSON.stringify($eventToSign))}?compressionType=none&returnType=signature&type=sign_event&appName=SatsRoute`,
   );
 </script>
 

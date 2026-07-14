@@ -1,9 +1,9 @@
 {
-  "appId": "io.coinos",
-  "appName": "Coinos",
+  "appId": "com.satsroute",
+  "appName": "SatsRoute",
   "server": {
-    "hostname": "coinos.io",
-    "url": "https://coinos.io/start"
+    "hostname": "satsroute.com",
+    "url": "https://satsroute.com/start"
   },
   "android": {
     "webContentsDebuggingEnabled": true,

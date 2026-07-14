@@ -30,7 +30,7 @@
 </script>
 
 <div class="space-y-5 pb-20">
-  <h1 class="text-3xl mb-6 md:pt-12 font-bold">Coinos Bounties</h1>
+  <h1 class="text-3xl mb-6 md:pt-12 font-bold">SatsRoute Bounties</h1>
 
   <p>Earn sats by referring us to local businesses in Vancouver!</p>
 
@@ -164,8 +164,8 @@
 
   <p>
     Reach out to <a
-      href="mailto:bounties@coinos.io"
-      class="text-blue-600 hover:underline">bounties@coinos.io</a
+      href="mailto:bounties@satsroute.com"
+      class="text-blue-600 hover:underline">bounties@satsroute.com</a
     > and let us know who we should contact
   </p>
 

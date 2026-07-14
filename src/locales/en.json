@@ -89,7 +89,7 @@
 		"locations": {
 			"viewMap": "View map",
 			"header": "Locations",
-			"description": "Over 500 businesses worldwide are accepting bitcoin with Coinos. We hope that yours will be next!"
+			"description": "Over 500 businesses worldwide are accepting bitcoin with SatsRoute. We hope that yours will be next!"
 		}
 	},
 	"error": {
@@ -102,14 +102,14 @@
 		"header": "FAQ",
 		"cost": {
 			"question": "What does it cost?",
-			"answer": "Receiving payments is free. Sending to other Coinos accounts is free. Withdrawals to external wallets are free if you use the same network you received on, otherwise there's a 0.4% fee for Bitcoin or 0.1% for Lightning or Liquid."
+			"answer": "Receiving payments is free. Sending to other SatsRoute accounts is free. Withdrawals to external wallets are free if you use the same network you received on, otherwise there's a 0.4% fee for Bitcoin or 0.1% for Lightning or Liquid."
 		},
 		"compatibility": {
 			"question": "Do I need any special device or software?",
-			"answer": "Coinos works on any device that has Internet and a web browser. You can receive payment notifications within the app, via email or push notification. We do have PoS terminals and receipt printers available for those who prefer physical notifications."
+			"answer": "SatsRoute works on any device that has Internet and a web browser. You can receive payment notifications within the app, via email or push notification. We do have PoS terminals and receipt printers available for those who prefer physical notifications."
 		},
 		"pos": {
-			"question": "Can Coinos integrate with my existing PoS?",
+			"question": "Can SatsRoute integrate with my existing PoS?",
 			"answer": "We can log sales into Square automatically. On other systems you might choose to record Bitcoin sales under \"cash\"."
 		},
 		"bitcoin": {
@@ -159,7 +159,7 @@
 	"jobs": {
 		"header": "Jobs",
 		"subheader": "Current Openings",
-		"pitch1": "Coinos is actively looking for developers to join our growing team (full-time or part-time, remote working OK).",
+		"pitch1": "SatsRoute is actively looking for developers to join our growing team (full-time or part-time, remote working OK).",
 		"pitch2": "Excited about working on open source bitcoin? Then take a look at our repositories on",
 		"github": "GitHub",
 		"pitch3": "If you think you can make an impact, we'd love to hear from you. Send us your resume to"
@@ -367,7 +367,7 @@
 			"emailNotifications": "Email Notifications",
 			"emailNotificationsDescription": "Get notified via email when a change occurs on your account or when people send you payments.",
 			"smsNotifications": "SMS Notifications",
-			"smsNotificationsDescription": "Coinos will send you text notifications when this is enabled.",
+			"smsNotificationsDescription": "SatsRoute will send you text notifications when this is enabled.",
 			"theme": "Color Theme",
 			"tipPrompt": "Prompt for tips",
 			"tipPromptDescription": "Ask people if they want to add a tip before paying their invoices",
@@ -457,7 +457,7 @@
 		"createFund": "Create a fund",
 		"withdraw": "Withdraw",
 		"fast": "Fast",
-		"ecashDesc": "Ecash tokens are funded with bitcoin. They may be redeemed in exchange for a lightning payment equal to their value or loaded back into a coinos account at any time. They can also be transferred to other ecash wallets either wholly or partially. You might use them to give bitcoin to someone who doesn't have a wallet by texting the token to them or sharing a link to it. Learn more at",
+		"ecashDesc": "Ecash tokens are funded with bitcoin. They may be redeemed in exchange for a lightning payment equal to their value or loaded back into a SatsRoute account at any time. They can also be transferred to other ecash wallets either wholly or partially. You might use them to give bitcoin to someone who doesn't have a wallet by texting the token to them or sharing a link to it. Learn more at",
 		"ecashToken": "Ecash token",
 		"medium": "Medium",
 		"maxFeeDesc": "Set an upper limit on the network routing fee. If set too low the payment may fail. You can set it higher and try again. We debit the full amount while attempting the payment but credit back any unused portion.",

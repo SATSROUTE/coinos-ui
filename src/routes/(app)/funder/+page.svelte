@@ -27,7 +27,7 @@ let here = false;
           records: [
             {
               recordType: 'url',
-              data: 'https://coinos.io',
+              data: 'https://satsroute.com',
             },
           ],
         },

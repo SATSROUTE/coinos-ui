@@ -77,21 +77,21 @@ $effect(() => {
 </script>
 
 <svelte:head>
-  <title>coinos</title>
-  <meta property="og:title" content="coinos" />
-  <meta name="twitter:title" content="coinos" />
+  <title>SatsRoute</title>
+  <meta property="og:title" content="SatsRoute" />
+  <meta name="twitter:title" content="SatsRoute" />
 
   <meta property="og:image" content={`${host}/images/logo.webp`} />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="An easy to use bitcoin web wallet" />
-  <meta name="description" content="An easy to use bitcoin web wallet" />
+  <meta property="og:description" content="Bitcoin, Lightning e stablecoins (USDt, DePix) numa carteira simples" />
+  <meta name="description" content="Bitcoin, Lightning e stablecoins (USDt, DePix) numa carteira simples" />
 
-  <meta name="keywords" content="coinos easy bitcoin web wallet" />
+  <meta name="keywords" content="satsroute bitcoin lightning liquid usdt depix carteira wallet" />
   <meta name="twitter:image" content={`${host}/images/logo.webp`} />
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:url" content={host + pathname} />
-  <meta name="twitter:site" content="@coinoswallet" />
-  <meta name="twitter:creator" content="@coinoswallet" />
+  <meta name="twitter:site" content="@satsroute" />
+  <meta name="twitter:creator" content="@satsroute" />
 </svelte:head>
 
 {#if !$loading}

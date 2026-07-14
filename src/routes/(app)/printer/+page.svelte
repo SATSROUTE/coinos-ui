@@ -84,12 +84,12 @@
         <input
           name="username"
           bind:value={username}
-          placeholder="coinos username"
+          placeholder="SatsRoute username"
         />
         <input
           name="password"
           bind:value={password}
-          placeholder="coinos password"
+          placeholder="SatsRoute password"
         />
         <button type="submit" class="btn">Generate Config</button>
       </form>
