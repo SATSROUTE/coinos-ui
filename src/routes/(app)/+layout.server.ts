@@ -46,9 +46,6 @@ export async function load({ cookies, request, url, params }) {
 		}
 	}
 
-	if (user?.needsMigration) {
-		redirect(307, "/migrate");
-	}
 
 	if (
 		user &&
