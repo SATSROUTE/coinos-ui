@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env*.local
+ios
+.history/
+db
+.claude/
+test-results/

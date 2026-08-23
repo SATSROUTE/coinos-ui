@@ -1,0 +1,28 @@
+{
+  "theme_color": "#fff",
+  "background_color": "#000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/start",
+  "name": "Coinos",
+  "description": "The easiest way to get started with Bitcoin",
+  "short_name": "Coinos",
+  "icons": [
+    {
+      "src": "/icon-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+bitcoin",
+      "url": "/send/%s"
+    },
+    {
+      "protocol": "bitcoin",
+      "url": "/send/%s"
+    }
+  ]
+}

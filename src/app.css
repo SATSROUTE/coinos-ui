@@ -1,0 +1,83 @@
+/* 1) Load Tailwind first */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2) Register DaisyUI themes */
+@plugin "daisyui" {
+  themes: lofi --default, black --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "lofi";
+  default: true;
+  --gradient: #C3CFE2;
+  --color-error: #b91c1c;
+}
+
+@plugin "daisyui/theme" {
+  name: "black";
+  prefersdark: true;
+  --gradient: #C3CFE2;
+  --color-secondary: #CCC;
+  --color-error: #f87171;
+}
+
+/* 3) Tell Tailwind which layers we’ll @apply from */
+@reference utilities;
+@reference components;
+
+/* 4) Now your custom CSS that uses @apply */
+.btn-menu {
+  @apply flex justify-center items-center bg-base-100 p-2 rounded-full
+         w-12 h-12 sm:w-16 sm:h-16 drop-shadow-xl;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/fonts/Public_Sans/static/PublicSans-Regular.ttf") format("truetype");
+}
+
+html { font-family: PublicSans, sans-serif; }
+
+::selection { color: black; background: #eaf2ff; }
+:fullscreen { background-color: white; }
+
+/* Note: @apply-ing DaisyUI component classes requires components reference */
+.input { @apply input-lg input-primary h-16 px-4; }
+
+/* If you want to *turn* native inputs into DaisyUI inputs via @apply: */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+input[type="tel"] {
+  @apply input input-lg input-primary h-16 px-4;
+}
+textarea { @apply textarea textarea-lg textarea-primary py-4; }
+select { @apply select select-lg select-primary h-16 px-4; }
+
+input:not([type="range"]), textarea, select, .input  {
+  @apply rounded-2xl w-full;
+}
+
+input.clean, textarea.clean {
+  border: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+button { cursor: pointer !important; }
+.btn { @apply rounded-2xl btn-lg btn-block outline-none h-16 cursor-pointer; }
+
+@layer components {
+  :where(input, textarea, select, .input, .textarea, .select) {
+    outline-offset: 0 !important;
+  }
+}
