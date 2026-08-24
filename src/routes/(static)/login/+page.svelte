@@ -67,7 +67,8 @@
   const getRecaptchaToken = () =>
     new Promise((resolve, reject) => {
       if (isTor) return resolve("");
-      if (!browser || !grecaptcha) return reject(new Error("captcha unavailable"));
+      if (!recaptchaSiteKey) return resolve(""); // captcha desativado (sem site key)
+      if (!browser || typeof grecaptcha === "undefined") return reject(new Error("captcha unavailable"));
       grecaptcha.ready(() => {
         grecaptcha
           .execute(recaptchaSiteKey, { action: "login" })
