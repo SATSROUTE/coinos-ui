@@ -10,3 +10,6 @@ ios
 db
 .claude/
 test-results/
+
+# config local do ensaio regtest
+.env.regtest
