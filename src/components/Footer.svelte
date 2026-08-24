@@ -24,7 +24,7 @@
   <div class="space-y-5">
     <div class="text-center w-full">
       <a href="/" aria-label="Home">
-        <iconify-icon noobserver icon="coinos:logo" width="224"></iconify-icon>
+        <span class="font-extrabold tracking-tight text-3xl lg:text-4xl leading-none select-none">Sats<span class="text-primary">Route</span></span>
       </a>
     </div>
     <div class="flex gap-2 justify-center sm:hidden">

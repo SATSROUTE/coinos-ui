@@ -61,7 +61,7 @@
       </ul>
       <hr class="my-4" />
       <a href="/?stay=true"
-        ><iconify-icon noobserver icon="coinos:logo" width="160"></iconify-icon></a
+        ><span class="font-extrabold tracking-tight text-2xl leading-none select-none">Sats<span class="text-primary">Route</span></span></a
       >
     </div>
   </OutClick>

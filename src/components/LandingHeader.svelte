@@ -24,7 +24,7 @@
   <nav class="block lg:flex justify-between items-center">
     <div class="flex justify-start lg:justify-center items-center lg:space-x-5">
       <a href="/" onclick={() => scroll(header)} aria-label="Home">
-        <iconify-icon noobserver icon="coinos:logo" width="224"></iconify-icon>
+        <span class="font-extrabold tracking-tight text-3xl lg:text-4xl leading-none select-none">Sats<span class="text-primary">Route</span></span>
       </a>
     </div>
 
