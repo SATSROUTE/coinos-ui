@@ -56,7 +56,7 @@
     </a>
 
     <a href={`/send`} class="contents grow" onclick={setAccount}>
-      <button type="button" class="btn !w-auto flex-grow">
+      <button type="button" class="btn btn-primary !w-auto flex-grow">
         <iconify-icon noobserver icon="ph:paper-plane-right-bold" width="32"
         ></iconify-icon>
         <div class="my-auto">{$t("user.dashboard.send")}</div>
