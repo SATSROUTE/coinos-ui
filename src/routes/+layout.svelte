@@ -8,7 +8,7 @@
   import { installPrompt, theme as themeStore } from "$lib/store";
 
 
-const map = { light: 'lofi', dark: 'black', system: 'system' };
+const map = { light: 'light', dark: 'dark', system: 'system' };
 
   let { data, children } = $props();
   let { pathname, theme } = $state(data);

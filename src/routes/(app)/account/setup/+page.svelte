@@ -7,7 +7,7 @@
 
   <div class="container w-full mx-auto text-lg px-4 max-w-xl space-y-5">
     <a href="/account/cash" class="block">
-      <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-primary">
+      <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-base-200">
         <img src="/images/cash.png" class="w-20 my-auto" />
         <div>
           <div class="text-xl">Cash</div>
@@ -18,7 +18,7 @@
       </div>
     </a>
     <a href="/account/savings" class="block">
-      <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-primary">
+      <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-base-200">
         <img src="/images/keys.png" class="w-20 my-auto" />
         <div>
           <div class="text-xl">Savings</div>

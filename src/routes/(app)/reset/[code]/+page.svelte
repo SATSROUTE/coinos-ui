@@ -1,10 +1,10 @@
 <script>
+  import Logo from "$comp/Logo.svelte";
   import { PUBLIC_RECAPTCHA_SITE_KEY } from "$env/static/public";
   import { browser } from "$app/environment";
   import { onDestroy, onMount, tick } from "svelte";
   import { t } from "$lib/translations";
   import PasswordInput from "$comp/PasswordInput.svelte";
-  import Icon from "$comp/Icon.svelte";
   import Spinner from "$comp/Spinner.svelte";
   import { fly } from "svelte/transition";
   import { password } from "$lib/store";
@@ -72,7 +72,7 @@
 <div class="pt-10">
   <div class="w-[243px] mx-auto mb-10">
     <a href="/">
-      <Icon icon="logo" />
+      <Logo class="w-60 h-auto" />
     </a>
   </div>
 

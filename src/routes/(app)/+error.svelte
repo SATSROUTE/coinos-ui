@@ -1,6 +1,6 @@
 <script>
+  import Logo from "$comp/Logo.svelte";
   import { back } from "$lib/utils";
-  import Icon from "$comp/Icon.svelte";
   import { page } from "$app/stores";
 
   let { data } = $props();
@@ -12,7 +12,7 @@
 <div class="container px-4 max-w-xl mx-auto mt-10 space-y-5">
   <div class="w-full flex">
     <a href="/" class="mx-auto">
-      <Icon icon="logo" />
+      <Logo class="w-60 h-auto" />
     </a>
   </div>
 

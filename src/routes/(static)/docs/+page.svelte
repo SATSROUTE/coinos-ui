@@ -46,7 +46,7 @@
 
   <h2 class="text-2xl">API Base URL</h2>
   <div
-    class="bg-primary text-primary-content rounded-lg p-4 flex gap-4 items-center"
+    class="bg-base-200 border border-base-300 rounded-card p-4 flex gap-4 items-center"
   >
     <div>{api}</div>
     {@render cp(api)}
@@ -65,7 +65,7 @@
   </p>
 
   <div
-    class="bg-primary text-primary-content rounded-lg p-4 flex gap-4 items-center"
+    class="bg-base-200 border border-base-300 rounded-card p-4 flex gap-4 items-center"
   >
     <div class="w-full break-all">{tokenSample}</div>
     {@render cp(tokenSample)}
@@ -77,7 +77,7 @@
       payments but can't be used to make withdrawals
     </p>
     <div
-      class="bg-primary text-primary-content rounded-lg p-4 flex gap-4 items-center"
+      class="bg-base-200 border border-base-300 rounded-card p-4 flex gap-4 items-center"
     >
       <div class="w-full break-all">{roSample}</div>
       {@render cp(roSample)}

@@ -9,7 +9,7 @@
   <div class="container w-full mx-auto text-lg px-4 max-w-xl space-y-2">
     <div class="space-y-5">
       <a href="/account/cash" class="block">
-        <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-primary">
+        <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-base-200">
           <img src="/icons/logo-symbol.svg" class="w-20" />
           <div>
             <div class="text-xl">SatsRoute</div>
@@ -18,7 +18,7 @@
         </div>
       </a>
       <a href="/account/cash" class="block">
-        <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-primary">
+        <div class="shadow p-8 rounded-xl flex gap-4 hover:bg-base-200">
           <img src="/images/minibits.png" class="w-20" />
           <div>
             <div class="text-xl">Minibits</div>

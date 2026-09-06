@@ -1,53 +1,245 @@
-/* 1) Load Tailwind first */
+/* SatsRoute — folha global.
+   Os valores vem do design system (lib/styles/tokens.css, prefixo --sr-).
+   Aqui eles sao ligados a duas camadas que os componentes ja usam:
+     1. temas DaisyUI "dark" e "light" (btn, input, bg-base-*, text-secondary...)
+     2. utilitarios Tailwind extras (bg-surface, text-muted, rounded-card, h-control...) */
+
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./lib/styles/tokens.css";
 
-/* 2) Register DaisyUI themes */
+/* ---------- 1. Temas DaisyUI ----------
+   Os nomes "dark" e "light" sao os mesmos que o cookie `theme` guarda, entao
+   +layout.svelte grava data-theme direto, e tokens.css troca junto.
+   Mapa (Coinos -> design system):
+     base-100/200/300  = bg / bg-subtle / surface
+     primary e accent  = laranja (o Coinos usa btn-accent como acao principal)
+     *-content sobre laranja = GRAFITE, nunca branco (DESIGN.md §2.4)
+     secondary         = texto de apoio (text-secondary aparece 160x no codigo
+                         como "texto discreto", nao como cor de marca)
+     neutral           = surface-raised (botao secundario)
+     info              = teal (rota e sinal) */
 @plugin "daisyui" {
-  themes: lofi --default, black --prefersdark;
+  themes: false; /* so os dois temas abaixo; os embutidos tem o mesmo nome e ganhariam em prefers-color-scheme */
 }
 
 @plugin "daisyui/theme" {
-  name: "lofi";
+  name: "dark";
   default: true;
-  --gradient: #C3CFE2;
-  --color-error: #b91c1c;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #0F1115;
+  --color-base-200: #15181E;
+  --color-base-300: #1C2029;
+  --color-base-content: #F5F6F9;
+  --color-primary: #F7931A;
+  --color-primary-content: #0F1115;
+  --color-secondary: #9CA3B5;
+  --color-secondary-content: #0F1115;
+  --color-accent: #F7931A;
+  --color-accent-content: #0F1115;
+  --color-neutral: #262B36;
+  --color-neutral-content: #F5F6F9;
+  --color-info: #00B3A4;
+  --color-info-content: #0F1115;
+  --color-success: #22C55E;
+  --color-success-content: #0F1115;
+  --color-warning: #EAB308;
+  --color-warning-content: #0F1115;
+  --color-error: #EF4444;
+  --color-error-content: #0F1115;
+  --radius-selector: 9999px;
+  --radius-field: 8px;
+  --radius-box: 12px;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
 
 @plugin "daisyui/theme" {
-  name: "black";
-  prefersdark: true;
-  --gradient: #C3CFE2;
-  --color-secondary: #CCC;
-  --color-error: #f87171;
+  name: "light";
+  color-scheme: light;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F5F6F9;
+  --color-base-300: #E6E8EE;
+  --color-base-content: #0F1115;
+  --color-primary: #F7931A;
+  --color-primary-content: #0F1115;
+  --color-secondary: #4B5262;
+  --color-secondary-content: #FFFFFF;
+  --color-accent: #F7931A;
+  --color-accent-content: #0F1115;
+  --color-neutral: #F5F6F9;
+  --color-neutral-content: #0F1115;
+  --color-info: #0E9384;
+  --color-info-content: #FFFFFF;
+  --color-success: #15803D;
+  --color-success-content: #FFFFFF;
+  --color-warning: #A16207;
+  --color-warning-content: #FFFFFF;
+  --color-error: #B91C1C;
+  --color-error-content: #FFFFFF;
+  --radius-selector: 9999px;
+  --radius-field: 8px;
+  --radius-box: 12px;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
 
-/* 3) Tell Tailwind which layers we’ll @apply from */
+/* ---------- 2. Tailwind: primitivos (valores fixos) ---------- */
+@theme {
+  --font-sans: "Manrope", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* substitui as paletas orange/teal do Tailwind pelas do logo */
+  --color-orange-*: initial;
+  --color-teal-*: initial;
+  --color-graphite-50: #F5F6F9;
+  --color-graphite-100: #E6E8EE;
+  --color-graphite-200: #C9CDD8;
+  --color-graphite-300: #9CA3B5;
+  --color-graphite-400: #6B7284;
+  --color-graphite-500: #4B5262;
+  --color-graphite-600: #343A47;
+  --color-graphite-700: #262B36;
+  --color-graphite-800: #1C2029;
+  --color-graphite-900: #15181E;
+  --color-graphite-950: #0F1115;
+  --color-orange-50: #FFF7ED;
+  --color-orange-100: #FFEDD5;
+  --color-orange-200: #FED7AA;
+  --color-orange-300: #FDBA74;
+  --color-orange-400: #FB923C;
+  --color-orange-500: #F7931A;
+  --color-orange-600: #DD7A0B;
+  --color-orange-700: #B45309;
+  --color-orange-800: #8A3F0A;
+  --color-orange-900: #6B3008;
+  --color-teal-100: #CCFBF5;
+  --color-teal-300: #5EEAD4;
+  --color-teal-400: #2DD4BF;
+  --color-teal-500: #00B3A4;
+  --color-teal-600: #0E9384;
+  --color-teal-700: #0F766E;
+  --color-teal-800: #115E59;
+  --color-teal-900: #134E4A;
+  --color-asset-btc: #F7931A;
+  --color-asset-lightning: #00B3A4;
+  --color-asset-lbtc: #3B82F6;
+  --color-asset-depix: #77B255;
+  --color-asset-lusdt: #26A17B;
+
+  /* gradiente do avatar/placeholder (Avatar.svelte, ItemForm.svelte usam
+     from-primary to-gradient): laranja -> laranja escuro, tonal */
+  --color-gradient: #DD7A0B;
+
+  --radius-chip: 4px;
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-sheet: 20px;
+  --radius-hero: 28px;
+  --radius-pill: 9999px;
+
+  /* alturas de componente: h-control, h-control-lg, h-amount... */
+  --spacing-control-sm: 36px;
+  --spacing-control: 44px;
+  --spacing-control-lg: 52px;
+  --spacing-amount: 72px;
+  --spacing-badge: 24px;
+  --spacing-tx-icon: 36px;
+
+  --container-wallet: 480px;
+  --container-page: 1120px;
+
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --default-transition-timing-function: cubic-bezier(.16, 1, .3, 1);
+  --default-transition-duration: 200ms;
+}
+
+/* ---------- 2b. Tailwind: semanticos (seguem o tema via --sr-*) ---------- */
+@theme inline {
+  --color-surface: var(--sr-surface);
+  --color-surface-raised: var(--sr-surface-raised);
+  --color-muted: var(--sr-text-muted);
+  --color-faint: var(--sr-text-faint);
+  --color-route: var(--sr-accent);
+  --color-route-text: var(--sr-accent-text);
+  --color-route-subtle: var(--sr-accent-subtle);
+  --color-primary-text: var(--sr-primary-text);
+  --color-tx-in: var(--sr-tx-in);
+  --color-tx-pending: var(--sr-tx-pending);
+  --color-tx-failed: var(--sr-tx-failed);
+  --shadow-glow: var(--sr-glow);
+  --shadow-focus: var(--sr-focus-ring);
+}
+
+/* ---------- Fontes (auto-hospedadas, variaveis) ---------- */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/manrope/manrope-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/manrope/manrope-latin-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("/fonts/jetbrains-mono/jetbrains-mono-latin-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---------- Base ---------- */
 @reference utilities;
 @reference components;
 
-/* 4) Now your custom CSS that uses @apply */
+html {
+  font-family: var(--sr-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: var(--sr-bg);
+  color: var(--sr-text);
+}
+::selection { background: var(--sr-selection); }
+:fullscreen { background-color: var(--sr-bg); }
+
+/* titulos e saldos: entrelinha curta e tracking negativo (DESIGN.md §3) */
+h1, h2, .text-3xl, .text-4xl { letter-spacing: -0.02em; line-height: 1.15; }
+
+/* ---------- Componentes ---------- */
 .btn-menu {
   @apply flex justify-center items-center bg-base-100 p-2 rounded-full
          w-12 h-12 sm:w-16 sm:h-16 drop-shadow-xl;
 }
 
-@font-face {
-  font-family: "PublicSans";
-  src: url("/fonts/Public_Sans/static/PublicSans-Regular.ttf") format("truetype");
-}
+/* Inputs: fundo bg-subtle, borda 1px, foco em teal. Altura 52 (lg do DS) para
+   manter o toque generoso do Coinos em mobile. */
+.input { @apply input-lg h-control-lg px-4; }
 
-html { font-family: PublicSans, sans-serif; }
-
-::selection { color: black; background: #eaf2ff; }
-:fullscreen { background-color: white; }
-
-/* Note: @apply-ing DaisyUI component classes requires components reference */
-.input { @apply input-lg input-primary h-16 px-4; }
-
-/* If you want to *turn* native inputs into DaisyUI inputs via @apply: */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -55,13 +247,20 @@ input[type="number"],
 input[type="search"],
 input[type="url"],
 input[type="tel"] {
-  @apply input input-lg input-primary h-16 px-4;
+  @apply input input-lg h-control-lg px-4;
 }
-textarea { @apply textarea textarea-lg textarea-primary py-4; }
-select { @apply select select-lg select-primary h-16 px-4; }
+textarea { @apply textarea textarea-lg py-4; }
+select { @apply select select-lg h-control-lg px-4; }
 
-input:not([type="range"]), textarea, select, .input  {
-  @apply rounded-2xl w-full;
+input:not([type="range"]), textarea, select, .input {
+  @apply rounded-control w-full;
+  background-color: var(--sr-bg-subtle);
+  border-color: var(--sr-border);
+}
+.input:focus, .input:focus-within, .textarea:focus, .textarea:focus-within, .select:focus,
+input:not([type="range"]):focus, textarea:focus, select:focus {
+  border-color: var(--sr-accent);
+  outline-color: var(--sr-accent);
 }
 
 input.clean, textarea.clean {
@@ -74,7 +273,11 @@ input.clean, textarea.clean {
 }
 
 button { cursor: pointer !important; }
-.btn { @apply rounded-2xl btn-lg btn-block outline-none h-16 cursor-pointer; }
+
+/* Botao: raio 8, altura 52 (lg), rotulo sm/600 escalado para o bloco cheio */
+.btn {
+  @apply rounded-control btn-block outline-none h-control-lg cursor-pointer text-base font-semibold;
+}
 
 @layer components {
   :where(input, textarea, select, .input, .textarea, .select) {

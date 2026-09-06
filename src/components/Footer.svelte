@@ -1,4 +1,5 @@
 <script>
+  import Logo from "$comp/Logo.svelte";
   import DarkToggle from "$comp/DarkToggle.svelte";
   import LocaleSelector from "$comp/LocaleSelector.svelte";
   import { t } from "$lib/translations";
@@ -24,7 +25,7 @@
   <div class="space-y-5">
     <div class="text-center w-full">
       <a href="/" aria-label="Home">
-        <span class="font-extrabold tracking-tight text-3xl lg:text-4xl leading-none select-none">Sats<span class="text-primary">Route</span></span>
+        <Logo class="h-9 lg:h-11 w-auto" />
       </a>
     </div>
     <div class="flex gap-2 justify-center sm:hidden">

@@ -1,4 +1,5 @@
 <script>
+  import Logo from "$comp/Logo.svelte";
   import { theme } from "$lib/store";
   import DarkToggle from "$comp/DarkToggle.svelte";
   import { OutClick } from "svelte-outclick";
@@ -61,7 +62,7 @@
       </ul>
       <hr class="my-4" />
       <a href="/?stay=true"
-        ><span class="font-extrabold tracking-tight text-2xl leading-none select-none">Sats<span class="text-primary">Route</span></span></a
+        ><Logo class="h-8 w-auto" /></a
       >
     </div>
   </OutClick>

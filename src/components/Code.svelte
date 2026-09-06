@@ -11,7 +11,7 @@
 {/snippet}
 
 <div
-  class="bg-primary text-primary-content rounded-lg p-4 flex gap-4 whitespace-pre-wrap font-mono items-center"
+  class="bg-base-200 border border-base-300 rounded-card p-4 flex gap-4 whitespace-pre-wrap font-mono text-sm items-center"
 >
   <div
     class="overflow-x-scroll max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"

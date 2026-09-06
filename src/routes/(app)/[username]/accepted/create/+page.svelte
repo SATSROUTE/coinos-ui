@@ -44,7 +44,7 @@
     <div class="flex gap-2">
       <button
         type="button"
-        class="flex border rounded-2xl px-6 py-5 font-bold hover:opacity-80 w-full bg-primary justify-center gap-2"
+        class="flex rounded-control px-6 py-5 font-bold hover:opacity-80 w-full bg-primary text-primary-content justify-center gap-2"
         onclick={paste}
       >
         <Icon icon="paste" style="w-8 my-auto" />

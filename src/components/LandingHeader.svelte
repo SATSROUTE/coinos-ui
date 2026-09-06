@@ -1,4 +1,5 @@
 <script>
+  import Logo from "$comp/Logo.svelte";
   import { goto } from "$app/navigation";
   import { scroll } from "$lib/utils";
   import { t } from "$lib/translations";
@@ -24,7 +25,7 @@
   <nav class="block lg:flex justify-between items-center">
     <div class="flex justify-start lg:justify-center items-center lg:space-x-5">
       <a href="/" onclick={() => scroll(header)} aria-label="Home">
-        <span class="font-extrabold tracking-tight text-3xl lg:text-4xl leading-none select-none">Sats<span class="text-primary">Route</span></span>
+        <Logo class="h-9 lg:h-11 w-auto" />
       </a>
     </div>
 
@@ -111,7 +112,7 @@
             >{$t("nav.account")}
           </button>
           <button
-            class="bg-primary text-white border rounded-full px-6 py-2 font-bold block"
+            class="bg-primary text-primary-content rounded-full px-6 py-2 font-bold block"
             onclick={() => goto("/logout")}
           >
             {$t("nav.signOut")}

@@ -61,7 +61,7 @@
 
 {#if !$loading}
   <header
-    class="bg-gradient-to-r bg-primary bg-accent h-[175px] w-full relative bg-cover mb-20 !z-30"
+    class="bg-base-200 h-[175px] w-full relative bg-cover mb-20 !z-30"
     style:background-image={bg}
   >
     <nav class="flex justify-end items-center space-x-4 p-5">

@@ -53,7 +53,7 @@ export const load = async ({ cookies, request, url }) => {
 
 	await loadTranslations(locale, pathname); // keep this just before the `return`
 
-	const theme = cookies.get("theme") || "light";
+	const theme = cookies.get("theme") || "dark";
 
 	return {
 		theme,
