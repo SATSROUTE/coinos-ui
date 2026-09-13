@@ -441,6 +441,7 @@
 		"failedToRoute": "Impossible d'acheminer le paiement, le destinataire n'est peut-être pas joignable. Essayez d'envoyer un montant inférieur ou d'augmenter les frais de transaction.",
 		"ok": "ok",
 		"cancel": "Annuler",
+		"authorize": "Autoriser",
 		"message": "Message",
 		"fundingAmount": "Montant du financement",
 		"ecashDesc": "Obtenir des jetons ecash financé avec une certaine quantité de Bitcoin. Ils peuvent être rachetés en monnaie ou envoyer dans d'autres portefeuilles. Utilisez-les pour donner du Bitcoin à quelqu'un simplement en partageant l'URL ecash ou le QR code. En savoir plus à",

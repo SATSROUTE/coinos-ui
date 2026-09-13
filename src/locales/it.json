@@ -404,6 +404,7 @@
 	"payments": {
 		"ok": "Ok",
 		"cancel": "Annulla",
+		"authorize": "Autorizza",
 		"failedToRoute": "Impossibile inoltrare il pagamento, il destinatario potrebbe non essere raggiungibile. Prova ad inviare un importo inferiore o aumentando la quota di commissione.",
 		"message": "Messaggio",
 		"enterWalletPass": "Portafoglio password",

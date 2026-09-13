@@ -1,6 +1,6 @@
 import getRates from "$lib/rates";
 import { auth, fd, get, post, types } from "$lib/utils";
-import { error, fail, redirect } from "@sveltejs/kit";
+import { error, redirect } from "@sveltejs/kit";
 
 export async function load({ cookies, depends, params: { id }, parent }) {
 	depends("app:trust");
@@ -12,25 +12,14 @@ export async function load({ cookies, depends, params: { id }, parent }) {
 
 	const trust = await get("/trust", auth(cookies));
 	const trusted = trust.includes(invoice.uid);
-	if (trusted && (pin || !user.haspin)) {
-		let p;
-		try {
-			if (!invoice.tip && invoice.user.prompt) {
-				if (user.tip > 0) {
-					invoice.tip = Math.round(invoice.amount * (user.tip / 100));
-					invoice = await post(`/invoice/${id}`, { invoice }, auth(cookies));
-				} else {
-					throw new Error("tip");
-				}
-			}
-			p = await post("/payments", { ...invoice, pin }, auth(cookies));
-		} catch (e) {
-			const { message } = e as Error;
-			if (message === "tip") redirect(307, `/invoice/${id}/tip`);
-			fail(400, { message });
-		}
-		if (p) redirect(307, `/sent/${p.id}`);
-	}
+	// Destinatario confiavel NAO paga aqui. Antes o pagamento saia dentro do
+	// load(), ou seja, num GET: bastava induzir a vitima a abrir o link para
+	// debitar a conta dela. O pagamento acontece na action POST abaixo, com
+	// verificacao de origem (hooks.server.ts) e um toque do usuario. A tela ja
+	// vem preenchida, entao para o destinatario confiavel continua sendo um
+	// toque so. A gorjeta e tratada pelo redirect para /invoice/[id]/tip logo
+	// abaixo, que vale para confiavel e nao-confiavel (invoice.prompt herda
+	// user.prompt no servidor).
 
 	if (invoice.amount && invoice.prompt && invoice.tip === null)
 		redirect(307, `/invoice/${id}/tip`);
