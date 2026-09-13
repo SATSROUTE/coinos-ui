@@ -1,5 +1,5 @@
 import { PUBLIC_COINOS_URL } from "$env/static/public";
-import { fd, get, login, post } from "$lib/utils";
+import { fd, get, login, post, safePath } from "$lib/utils";
 import { fail, redirect } from "@sveltejs/kit";
 
 export const load = async ({ parent }) => {
@@ -31,7 +31,9 @@ export const actions = {
 			return fail(400, { error: "Login failed", message, ...form });
 		}
 
-		redirect(307, loginRedirect || `/${user.username}`);
+		// 303 para que o navegador faca GET no destino; com 307 o corpo do POST
+		// (usuario, senha, 2FA) seria reenviado ao destino.
+		redirect(303, safePath(loginRedirect, `/${user.username}`));
 	},
 
 	nostr: async ({ cookies, fetch, request }) => {
@@ -72,6 +74,6 @@ export const actions = {
 		cookies.set("username", username, opts);
 		cookies.set("token", token, opts);
 
-		redirect(307, loginRedirect || `/${username}`);
+		redirect(303, safePath(loginRedirect, `/${username}`));
 	},
 };

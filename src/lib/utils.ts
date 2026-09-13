@@ -499,6 +499,21 @@ export const ago = (t) => {
 	return `${days}d`;
 };
 
+// Destino de redirecionamento vindo do cliente (?redirect=, campo loginRedirect).
+// So aceita caminho da propria aplicacao: um unico "/" inicial, sem esquema e sem
+// "//" ou "/\\", que o navegador trataria como URL protocolo-relativa e levaria
+// para fora. Sem isso, um POST de login redirecionado com 307 reenvia usuario,
+// senha e 2FA para o destino externo.
+export const safePath = (target: unknown, fallback: string): string => {
+	if (typeof target !== "string") return fallback;
+	const value = target.trim();
+	if (!value || value === "undefined" || value === "null") return fallback;
+	if (!value.startsWith("/")) return fallback;
+	if (value.startsWith("//") || value.startsWith("/\\")) return fallback;
+	if (/[\r\n]/.test(value)) return fallback;
+	return value;
+};
+
 export const register = async (user, ip, cookies, loginRedirect, host?, extraHeaders?: Record<string, string>) => {
 	let error;
 
@@ -532,5 +547,5 @@ export const register = async (user, ip, cookies, loginRedirect, host?, extraHea
 	});
 
 	if (error) return svelteFail(400, { error });
-	redirect(303, loginRedirect || `/${user.username}`);
+	redirect(303, safePath(loginRedirect, `/${user.username}`));
 };
