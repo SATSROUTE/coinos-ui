@@ -63,10 +63,15 @@ export const decrypt = async ({ event, user }) => {
 	}
 };
 
+// A chave decifrada fica em sessionStorage, nao em localStorage: em
+// localStorage ela persistia indefinidamente, entao bastava um script no
+// contexto da pagina para leva-la embora a qualquer momento, muito depois do
+// usuario ter fechado o app. Em sessionStorage some quando a aba fecha, ao
+// custo de pedir a senha uma vez por sessao.
 export const getPrivateKey = async (user: User): Promise<Uint8Array> => {
 	let k;
 	if (browser) {
-		k = localStorage.getItem("nsec");
+		k = sessionStorage.getItem("nsec");
 		if (k) {
 			return nip19.decode(k).data as Uint8Array;
 		}
@@ -80,7 +85,11 @@ export const getPrivateKey = async (user: User): Promise<Uint8Array> => {
 		throw new Error("nsec not available");
 	}
 
-	localStorage.setItem("nsec", nip19.nsecEncode(k));
+	if (browser) {
+		sessionStorage.setItem("nsec", nip19.nsecEncode(k));
+		// Restos de versoes anteriores, que guardavam a chave em localStorage.
+		localStorage.removeItem("nsec");
+	}
 	return k;
 };
 

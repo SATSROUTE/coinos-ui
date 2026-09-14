@@ -6,7 +6,6 @@ export async function load({ cookies, depends, params: { id }, parent }) {
 	depends("app:trust");
 	const { subject, user } = await parent();
 	const aid = cookies.get("aid") || user.id;
-	const pin = cookies.get("pin");
 
 	let invoice = await get(`/invoice/${id}`);
 

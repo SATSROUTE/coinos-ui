@@ -63,10 +63,18 @@ export const password = writable<string | undefined>();
 export const passwordPrompt = writable();
 export const eventToSign = writable();
 export const pubkey = persistLocal("pubkey");
-export const signer = persistLocal("signer");
+// O signer guarda params.sk, a chave secreta em hex (ver lib/nostr.ts sign() e
+// components/Nostr.svelte). Em localStorage ela ficava indefinidamente; em
+// sessionStorage some ao fechar a aba, ao custo de reconectar o signer por
+// sessao.
+export const signer = persistSession("signer");
 export const camera = persistLocal("camera");
 export const selectSigner = writable();
-export const pin = persistLocal("pin");
+// PIN em sessionStorage, nao localStorage: em localStorage ele sobrevivia a
+// fechar o navegador, muito alem do locktime que o proprio PIN define. Um PIN
+// guardado indefinidamente onde qualquer script le anula o que ele deveria
+// proteger.
+export const pin = persistSession("pin");
 export const rate = writable();
 export const request = writable();
 export const requestRedirect = writable();
