@@ -18,13 +18,7 @@
   import { avatar, signer, password, pin, loginRedirect } from "$lib/store";
   import { t } from "$lib/translations";
   import { page } from "$app/stores";
-  import {
-    NumberDictionary,
-    uniqueNamesGenerator,
-    colors,
-    adjectives,
-    animals,
-  } from "unique-names-generator";
+  import { randomName, randomPassword } from "$lib/random";
   import { sign } from "$lib/nostr";
 
   let { form, data } = $props();
@@ -70,17 +64,10 @@
     e.preventDefault();
     cleared = false;
 
-    username = uniqueNamesGenerator({
-      dictionaries: [animals, NumberDictionary.generate({ min: 10, max: 99 })],
-      length: 2,
-      separator: "",
-    });
-
-    $password = uniqueNamesGenerator({
-      dictionaries: [colors, NumberDictionary.generate({ min: 100, max: 999 })],
-      length: 2,
-      separator: "",
-    });
+    // Antes isto duplicava a geracao aqui, com Math.random por baixo. Usa o
+    // helper compartilhado, que sorteia com crypto.getRandomValues.
+    username = randomName();
+    $password = randomPassword();
 
     revealPassword = true;
   };

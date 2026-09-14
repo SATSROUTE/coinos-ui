@@ -22,7 +22,7 @@ export async function load({ cookies, request, params, parent }) {
 		amount = Math.round((amount * sats) / rate);
 	}
 
-	const username = randomName() + Math.floor(Math.random() * 99) + 1;
+	const username = randomName();
 	const password = randomPassword();
 
 	if (!amount) redirect(307, `/fund/${id}`);
