@@ -25,7 +25,7 @@
 
   let { data, children } = $props();
 
-  let { user, subject, token } = $derived(data);
+  let { user, subject } = $derived(data);
   let { theme } = $state(data);
 
   $effect(() => ($themeStore = theme));
@@ -84,9 +84,9 @@
   let checkSocket = () => {
     counter++;
     let lost = socket?.readyState !== 1 || !$last || Date.now() - $last > 30000;
-    if (lost) connect(token);
+    if (lost) connect();
     if (counter > 5) {
-      send("heartbeat", token);
+      send("heartbeat");
       counter = 0;
     }
 

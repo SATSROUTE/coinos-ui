@@ -7,9 +7,11 @@ import cookies from "js-cookie";
 import { get } from "svelte/store";
 
 export let socket;
-let token;
 
-export const auth = () => token && send("login", token);
+// O socket autentica pelo cookie httpOnly no handshake (lib/sockets.ts no
+// servidor le o cookie "token" no upgrade). Nada de token no JavaScript: antes
+// ele vinha nos dados da pagina, o que anulava a protecao do httpOnly.
+export const auth = () => {};
 
 export const send = async (type, data) => {
 	try {
@@ -71,14 +73,12 @@ const maxReconnectDelay = 16000;
 let currentReconnectDelay = initialReconnectDelay;
 
 let connecting;
-export function connect(t) {
+export function connect() {
 	if (connecting) return;
 	connecting = true;
 	setTimeout(() => {
 		connecting = false;
 	}, 5000);
-
-	token = t;
 
 	if (socket) return auth();
 
@@ -101,7 +101,7 @@ async function onWebsocketMessage(msg) {
 
 function onWebsocketOpen() {
 	currentReconnectDelay = initialReconnectDelay;
-	send("heartbeat", token);
+	send("heartbeat");
 }
 
 function onWebsocketClose() {
@@ -118,5 +118,5 @@ function reconnectToWebsocket() {
 	if (currentReconnectDelay < maxReconnectDelay) {
 		currentReconnectDelay *= 2;
 	}
-	connect(token);
+	connect();
 }

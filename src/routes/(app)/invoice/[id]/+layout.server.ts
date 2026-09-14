@@ -39,5 +39,7 @@ export async function load({ cookies, depends, params, url, parent }) {
 	}
 
 	const theme = cookies.get("theme") || "light";
-	return { id, invoice, subject, user, token, theme };
+	// Sem token nos dados da pagina (ver (app)/+layout.server.ts). Ninguem
+	// consumia o valor aqui.
+	return { id, invoice, subject, user, theme };
 }

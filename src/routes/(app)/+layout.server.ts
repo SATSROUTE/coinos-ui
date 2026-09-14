@@ -57,5 +57,9 @@ export async function load({ cookies, request, url, params }) {
 
 	const theme = cookies.get("theme") || "light";
 
-	return { user, token, subject, theme };
+	// O token NAO vai para os dados da pagina: tudo que chega em load() fica
+	// acessivel ao JavaScript, o que anularia o httpOnly do cookie e entregaria a
+	// sessao a qualquer XSS. O WebSocket autentica pelo proprio cookie no
+	// handshake, e o upload usa cookie na mesma origem.
+	return { user, subject, theme };
 }

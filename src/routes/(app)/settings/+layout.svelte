@@ -21,7 +21,7 @@
 
   let formElement = $state();
 
-  let { token, cookies, subscriptions } = $derived(data);
+  let { subscriptions } = $derived(data);
   let { tab } = $derived(data);
   let user = $derived({ ...data?.user, ...form?.user });
   let prev = $derived({ ...data.user });
@@ -83,7 +83,7 @@
       if ($avatar) {
         try {
           let { hash } = JSON.parse(
-            await upload($avatar.file, $avatar.type, $avatar.progress, token),
+            await upload($avatar.file, $avatar.type, $avatar.progress),
           );
 
           let url = `${$page.url.origin}/api/public/${hash}.webp`;
@@ -98,7 +98,7 @@
       if ($banner) {
         try {
           let { hash } = JSON.parse(
-            await upload($banner.file, $banner.type, $banner.progress, token),
+            await upload($banner.file, $banner.type, $banner.progress),
           );
 
           let url = `${$page.url.origin}/api/public/${hash}.webp`;
@@ -140,10 +140,6 @@
       let email = body.get("email");
       if (email && email !== prev.email) {
         try {
-          cookies.get = function (n) {
-            return this.find((c) => c.name === n).value;
-          };
-
           user.verified = false;
 
           await post("/email", { email });
